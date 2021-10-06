@@ -16,7 +16,7 @@ HeroSelection = [
 ]
 
 
-# List of equipment items (24)
+# List of equipment items (24) - white
 CommonItems = [
   "Armor-Piercing Rounds",
   "Backup Magazine",
@@ -44,7 +44,7 @@ CommonItems = [
   "Warbanner"
 ]
 
-# List of Uncommon items (25)
+# List of Uncommon items (25) - green
 UncommonItems = [
   "AtG Missile Mk.1",
   "Bandolier",
@@ -73,7 +73,7 @@ UncommonItems = [
   "Will-o'-the-wisp"
 ]
 
-# List of legendary items (21)
+# List of legendary items (21) -red
 LegendaryItems = [ 
   "57 Leaf Clover",
   "Aegis",
@@ -98,7 +98,7 @@ LegendaryItems = [
   "Wake of Vultures"
 ]
 
-# List of Boss/Planet items (14)
+# List of Boss/Planet items (14) - yellow
 Boss_PlanetItems = [ 
   "Artifact Key",
   "Chargerd Perforator",
@@ -116,7 +116,7 @@ Boss_PlanetItems = [
   "Titanic Knurl"
 ]
 
-# List of equipment items (21)
+# List of equipment items (21) - orange
 EquipmentItems = [ 
   "Blast Shower",
   "Disposable Missle Launcher",
