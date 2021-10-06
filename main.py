@@ -2,31 +2,43 @@
 import ItemList
 import random
 
+# Variables that SHOULD NOT be changed (used in code)
+MinItems = 1  # Minimum amount of items for challenge
+
 # Variables user can change to determine generated outcome
-NumItems = 1
+MaxItems = 3  # Max number of items a player can be given
+Player = 2    # Number of players that will be in challenge
 
-# Variables whoms value will be randomly selected from ItemList.py
-HeroPicks           = random.choice(ItemList.HeroSelection);
-CommonItemPicks     = str(random.choices(ItemList.CommonItems, k = NumItems))[1:-1];
-UncommonItemPicks   = str(random.choices(ItemList.UncommonItems, k = NumItems))[1:-1];
-LegendaryItemPicks  = str(random.choices(ItemList.LegendaryItems, k = NumItems))[1:-1];
-Boss_PlanetPicks    = str(random.choices(ItemList.Boss_PlanetItems, k = NumItems))[1:-1];
-EquipmentPicks      = str(random.choices(ItemList.EquipmentItems, k = NumItems))[1:-1];
+# Function that returns number of items for that tier, for that player
+def GenItems():
+  GenItems = random.randint(MinItems, MaxItems)
+  return GenItems
 
-# Displays the challenge to the user
-print(f"""
+# For statement that generates challenge for each player
+for player in range(Player):
 
-Today's Challenge is.....
+  # Variables whoms value will be randomly selected from ItemList.py
+  HeroPicks           = random.choice(ItemList.HeroSelection);
+  CommonItemPicks     = str(random.choices(ItemList.CommonItems, k = GenItems()))[1:-1];
+  UncommonItemPicks   = str(random.choices(ItemList.UncommonItems, k = GenItems()))[1:-1];
+  LegendaryItemPicks  = str(random.choices(ItemList.LegendaryItems, k = GenItems()))[1:-1];
+  Boss_PlanetPicks    = str(random.choices(ItemList.Boss_PlanetItems, k = GenItems()))[1:-1];
+  EquipmentPicks      = str(random.choices(ItemList.EquipmentItems, k = GenItems()))[1:-1];
 
+  # Displays the challenge results to the user
+  print(f"""
 -------------------------------------------
 
-Hero: {HeroPicks}
+  Today's Challenge for player {player+1} is...
 
-      Common Item(s): {CommonItemPicks}
-    Uncommon Item(s): {UncommonItemPicks}
-  Lengendary Item(s): {LegendaryItemPicks}
-Boss/Planent Item(s): {Boss_PlanetPicks}
-        Equipment(s): {EquipmentPicks}
+  Hero: {HeroPicks}
 
--------------------------------------------
-""")
+        Common Item(s): {CommonItemPicks}
+      Uncommon Item(s): {UncommonItemPicks}
+    Lengendary Item(s): {LegendaryItemPicks}
+   Boss/Planet Item(s): {Boss_PlanetPicks}
+          Equipment(s): {EquipmentPicks}
+
+  -------------------------------------------
+  """)
+  player += 1

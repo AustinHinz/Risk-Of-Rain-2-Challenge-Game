@@ -73,7 +73,7 @@ UncommonItems = [
   "Will-o'-the-wisp"
 ]
 
-# List of legendary items (21) -red
+# List of legendary items (20) -red
 LegendaryItems = [ 
   "57 Leaf Clover",
   "Aegis",
@@ -81,7 +81,6 @@ LegendaryItems = [
   "Brainstalks",
   "Brilliant Behemoth",
   "Ceremonial Dagger",
-  "Defensive Microbots",
   "Dio's Best Friend",
   "Frost Relic",
   "H3AD-5T v2",
@@ -98,14 +97,13 @@ LegendaryItems = [
   "Wake of Vultures"
 ]
 
-# List of Boss/Planet items (14) - yellow
+# List of Boss/Planet items (13) - yellow
 Boss_PlanetItems = [ 
   "Artifact Key",
   "Chargerd Perforator",
   "Empathy Cores",
   "Genesis Loop",
   "Halcyon Seed",
-  "Irradiant Pearl",
   "Little Disciple",
   "Mired Urn",
   "Molten Perforator",
@@ -141,3 +139,16 @@ EquipmentItems = [
   "Volcanic Egg"
 ]
 
+# List of Lunar items (10) - blue 
+LunarItems = [ 
+  "Shaped Glass",
+  "Brittle Crown",
+  "Transcendence",
+  "Corpsebloom",
+  "Gesture of the Drowned",
+  "Strides of Heresy",
+  "Visions of Heresy",
+  "Beads of Fealty",
+  "Focused Convergence",
+  "Defiant Gouge"
+]
